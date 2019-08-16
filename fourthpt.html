@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"></script>
+</script>
+	<title>Login and Registration</title>
+		<link rel="stylesheet" text="text/css" href="style.css">
+			<script src="jquery3.4.1.min.js" charset="utf-8"></script>
+</head>
+	<body>
+		<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+			<input type="text" placeholder="Username"/>
+			<input type="text" placeholder="Password"/>
+			<input type="text" placeholder="Email ID"/>
+			<button type="Create">Create</button>
+			
+			<p class="message">Already Registered? <a href="#">Login</a> </p>
+				<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+			</form>
+
+			<form class="logi-form">
+			<input type="text" placeholder="Username"/>
+			<input type="Password" placeholder="Password"/>
+			<button type="Login">Login</button>
+			<p class="message">Not Registered? <a href="#">Register</p>
+			</form>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script>
+		$('.message a').click(function(){
+			$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+</html>
+
